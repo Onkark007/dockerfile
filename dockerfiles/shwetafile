@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "hi sush" > /tmp/sush
+ENV myname sush
+COPY linuxfile /etc
+ADD devops.tar.gz /home:
